@@ -65,13 +65,28 @@ public class CFSoundInit {
             // Takes in the registry name
             SoundEvent::createVariableRangeEvent
     );
+    public static final Holder<SoundEvent> SG_AMBIENT = SOUND_EVENTS.register(
+            "entity.stained_glass.ambient",
+            // Takes in the registry name
+            SoundEvent::createVariableRangeEvent
+    );
+    public static final Holder<SoundEvent> SG_REBOUND = SOUND_EVENTS.register(
+            "entity.stained_glass.rebound",
+            // Takes in the registry name
+            SoundEvent::createVariableRangeEvent
+    );
     public static final Holder<SoundEvent> SG_RETREAT = SOUND_EVENTS.register(
             "entity.stained_glass.retreat",
             // Takes in the registry name
             SoundEvent::createVariableRangeEvent
     );
-    public static final Holder<SoundEvent> SG_DIE = SOUND_EVENTS.register(
+    public static final Holder<SoundEvent> SG_HURT = SOUND_EVENTS.register(
             "entity.stained_glass.hurt",
+            // Takes in the registry name
+            SoundEvent::createVariableRangeEvent
+    );
+    public static final Holder<SoundEvent> SG_DIE = SOUND_EVENTS.register(
+            "entity.stained_glass.death",
             // Takes in the registry name
             SoundEvent::createVariableRangeEvent
     );

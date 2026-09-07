@@ -69,7 +69,7 @@ public class StainedGlassEntity extends Monster {
     }
     public void setReturning(float returning) {
         if(returning>=0.999f){
-            playSound(CFSoundInit.SG_RETREAT.value(),0.6f,0.7f+(float)Math.random()/10f);
+            playSound(CFSoundInit.SG_RETREAT.value(),0.7f,0.9f+(float)Math.random()/10f);
         }
         entityData.set(RETURNING,returning);
     }
@@ -194,10 +194,15 @@ public class StainedGlassEntity extends Monster {
         }
         return hurted;
     }
+    
+    @Override
+    protected SoundEvent getAmbientSound() {
+        return CFSoundInit.SG_AMBIENT.value();
+    }
 
     @Override
     protected SoundEvent getHurtSound(DamageSource damageSource) {
-        return SoundEvents.GLASS_BREAK;
+        return CFSoundInit.SG_HURT.value();
     }
 
     @Override
@@ -260,10 +265,7 @@ public class StainedGlassEntity extends Monster {
                 i.addDeltaMovement(dir);
                 i.hurtDuration=0;
                 i.hurt(this.glass.damageSources().mobProjectile(this.glass,this.glass),3);
-                this.glass.playSound(SoundEvents.GLASS_HIT,1.6f,0.8f);
-                this.glass.playSound(SoundEvents.GLASS_PLACE,1.6f,0.8f);
-                this.glass.playSound(SoundEvents.DECORATED_POT_SHATTER,0.6f,0.8f);
-                this.glass.playSound(SoundEvents.CHICKEN_HURT,0.1f,1.2f);
+                this.glass.playSound(CFSoundInit.SG_REBOUND.value(),1.6f,1f);
                 i.hurtTime=0;
                 i.invulnerableTime=0;
                 i.hurtMarked=false;

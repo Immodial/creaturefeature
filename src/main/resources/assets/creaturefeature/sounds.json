@@ -64,10 +64,37 @@
       "creaturefeature:entity/fiend_death"
     ]
   },
-  "entity.stained_glass.death": {
-    "subtitle": "sound.creaturefeature.stained_glass_die",
+  "entity.stained_glass.ambient": {
+    "subtitle": "sound.creaturefeature.stained_glass.ambient",
     "sounds": [
-      "creaturefeature:entity/stained_glass_die"
+      "creaturefeature:entity/stained_glass_ambient1",
+      "creaturefeature:entity/stained_glass_ambient2",
+      "creaturefeature:entity/stained_glass_ambient3"
+    ]
+  },
+  "entity.stained_glass.rebound": {
+    "subtitle": "sound.creaturefeature.stained_glass.rebound",
+    "sounds": [
+      "creaturefeature:entity/stained_glass_rebound1",
+      "creaturefeature:entity/stained_glass_rebound2"
+    ]
+  },
+  "entity.stained_glass.retreat": {
+    "sounds": [
+      "creaturefeature:entity/stained_glass_retreat"
+    ]
+  },
+  "entity.stained_glass.hurt": {
+    "subtitle": "sound.creaturefeature.stained_glass.hurt",
+    "sounds": [
+      "creaturefeature:entity/stained_glass_hurt1",
+      "creaturefeature:entity/stained_glass_hurt2"
+    ]
+  },
+  "entity.stained_glass.death": {
+    "subtitle": "sound.creaturefeature.stained_glass.death",
+    "sounds": [
+      "creaturefeature:entity/stained_glass_death"
     ]
   },
   "entity.coat_of_arms.hurt": {
