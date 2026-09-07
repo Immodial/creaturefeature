@@ -23,6 +23,35 @@
       "creaturefeature:entity/sinister_die"
     ]
   },
+  "entity.machination.ambient": {
+    "subtitle": "sound.creaturefeature.machination.ambient",
+    "sounds": [
+      "creaturefeature:machination_ambient1",
+      "creaturefeature:machination_ambient2",
+      "creaturefeature:machination_ambient3"
+    ]
+  },
+  "entity.machination.kick": {
+    "subtitle": "sound.creaturefeature.machination.kick",
+    "sounds": [
+      "creaturefeature:machination_kick1",
+      "creaturefeature:machination_kick2"
+    ]
+  },
+  "entity.machination.hurt": {
+    "subtitle": "sound.creaturefeature.machination.hurt",
+    "sounds": [
+      "creaturefeature:machination_hurt1",
+      "creaturefeature:machination_hurt2",
+      "creaturefeature:machination_hurt3"
+    ]
+  },
+  "entity.machination.death": {
+    "subtitle": "sound.creaturefeature.machination.die",
+    "sounds": [
+      "creaturefeature:machination_death"
+    ]
+  },
   "entity.fiend.hurt": {
     "subtitle": "sound.creaturefeature.fiend.hurt",
     "sounds": [

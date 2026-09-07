@@ -45,6 +45,26 @@ public class CFSoundInit {
             // Takes in the registry name
             SoundEvent::createVariableRangeEvent
     );
+    public static final Holder<SoundEvent> MACH_AMBIENT = SOUND_EVENTS.register(
+            "entity.machination.ambient",
+            // Takes in the registry name
+            SoundEvent::createVariableRangeEvent
+    );
+    public static final Holder<SoundEvent> MACH_KICK = SOUND_EVENTS.register(
+            "entity.machination.kick",
+            // Takes in the registry name
+            SoundEvent::createVariableRangeEvent
+    );
+    public static final Holder<SoundEvent> MACH_HURT = SOUND_EVENTS.register(
+            "entity.machination.hurt",
+            // Takes in the registry name
+            SoundEvent::createVariableRangeEvent
+    );
+    public static final Holder<SoundEvent> MACH_DIE = SOUND_EVENTS.register(
+            "entity.machination.die",
+            // Takes in the registry name
+            SoundEvent::createVariableRangeEvent
+    );
     public static final Holder<SoundEvent> SG_RETREAT = SOUND_EVENTS.register(
             "entity.stained_glass.retreat",
             // Takes in the registry name

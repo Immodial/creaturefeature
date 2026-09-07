@@ -1,9 +1,11 @@
 package net.atired.creaturefeature.entity;
 
+import net.atired.creaturefeature.init.CFSoundInit;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
@@ -20,6 +22,7 @@ import net.minecraft.world.entity.monster.ZombifiedPiglin;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
+import net.minecraft.sounds.SoundEvent;
 
 import java.util.EnumSet;
 
@@ -90,6 +93,21 @@ public class MachinationEntity extends Monster {
 
         super.tick();
     }
+    
+    @Override
+    protected SoundEvent getAmbientSound() {
+        return CFSoundInit.MACH_AMBIENT.value();
+    }
+    
+    @Override
+    protected SoundEvent getHurtSound(DamageSource damageSource) {
+        return CFSoundInit.MACH_HURT.value();
+    }
+
+    @Override
+    protected SoundEvent getDeathSound() {
+        return CFSoundInit.MACH_DIE.value();
+    }
 
     public void setLeaping(boolean leap) {
          entityData.set(LEAPING,leap);
@@ -135,7 +153,7 @@ public class MachinationEntity extends Monster {
             this.mob.moveControl.strafe(-1.3f,0);
             this.mob.lookAt(this.target,360f,360f);
             addDeltaMovement((this.mob.position().subtract(this.mob.getTarget().position()).multiply(1,0.1,1).normalize().multiply(-1.7,0.3,-1.7).add(0,Math.pow(this.mob.distanceTo(this.mob.getTarget())*0.4,0.5)/3.0f,0)));
-
+            this.mob.playSound(CFSoundInit.MACH_KICK.value(),1.4f,1f);
         }
 
         @Override

@@ -71,6 +71,10 @@
   "sound.creaturefeature.fiend.death": "Fiend dies",
   "sound.creaturefeature.sinister.hurt": "Sinister bubbles",
   "sound.creaturefeature.sinister.death": "Sinister dies",
+  "sound.creaturefeature.machination.ambient": "Machination whirrs",
+  "sound.creaturefeature.machination.kick": "Machination kicks",
+  "sound.creaturefeature.machination.hurt": "Machination hiccups",
+  "sound.creaturefeature.machination.death": "Machination dies",
   "effect.creaturefeature.sleepy": "Sleepy",
   "effect.creaturefeature.fiendish": "Fiendish",
 
