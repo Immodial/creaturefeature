@@ -20,53 +20,53 @@ public class CFSoundInit {
             SoundEvent::createVariableRangeEvent
     );
     public static final Holder<SoundEvent> SINISTER_HURT = SOUND_EVENTS.register(
-            "entity.sinister_hurt",
+            "entity.sinister.hurt",
             // Takes in the registry name
             SoundEvent::createVariableRangeEvent
     );
     public static final Holder<SoundEvent> SINISTER_DIE = SOUND_EVENTS.register(
-            "entity.sinister_die",
+            "entity.sinister.death",
             // Takes in the registry name
             SoundEvent::createVariableRangeEvent
     );
     //SOURCED FROM FIEND FOLIO REHEATED!!! PLAY IT IT'S FUCKING AWESOME
     public static final Holder<SoundEvent> FIEND_HURT = SOUND_EVENTS.register(
-            "entity.fiend_hurt",
+            "entity.fiend.hurt",
             // Takes in the registry name
             SoundEvent::createVariableRangeEvent
     );
     public static final Holder<SoundEvent> FIEND_DIE = SOUND_EVENTS.register(
-            "entity.fiend_die",
+            "entity.fiend.death",
             // Takes in the registry name
             SoundEvent::createVariableRangeEvent
     );
     public static final Holder<SoundEvent> SHOT = SOUND_EVENTS.register(
-            "entity.shot",
+            "entity.shot.fired",
             // Takes in the registry name
             SoundEvent::createVariableRangeEvent
     );
     public static final Holder<SoundEvent> SG_RETREAT = SOUND_EVENTS.register(
-            "entity.stained_glass_retreat",
+            "entity.stained_glass.retreat",
             // Takes in the registry name
             SoundEvent::createVariableRangeEvent
     );
     public static final Holder<SoundEvent> SG_DIE = SOUND_EVENTS.register(
-            "entity.stained_glass_die",
+            "entity.stained_glass.hurt",
             // Takes in the registry name
             SoundEvent::createVariableRangeEvent
     );
     public static final Holder<SoundEvent> COA_HURT = SOUND_EVENTS.register(
-            "entity.coa_hurt",
+            "entity.coat_of_arms.hurt",
             // Takes in the registry name
             SoundEvent::createVariableRangeEvent
     );
     public static final Holder<SoundEvent> FRIEND = SOUND_EVENTS.register(
-            "entity.friend",
+            "entity.friend.ambient",
             // Takes in the registry name
             SoundEvent::createVariableRangeEvent
     );
     public static final Holder<SoundEvent> FRIEND_HURT = SOUND_EVENTS.register(
-            "entity.friend_hurt",
+            "entity.friend.hurt",
             // Takes in the registry name
             SoundEvent::createVariableRangeEvent
     );

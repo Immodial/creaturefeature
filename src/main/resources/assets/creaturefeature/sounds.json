@@ -2,67 +2,67 @@
   "music_disc.nothing": {
     "subtitle": "sound.creaturefeature.nothing",
     "sounds": [
-      "creaturefeature:nothing"
+      "creaturefeature:disc/nothing"
     ]
   },
   "music_disc.newagenevermore": {
     "subtitle": "sound.creaturefeature.new_age_nevermore",
     "sounds": [
-      "creaturefeature:newagenevermore"
+      "creaturefeature:disc/newagenevermore"
     ]
   },
-  "entity.friend": {
-    "subtitle": "sound.creaturefeature.laughter",
+  "entity.sinister.hurt": {
+    "subtitle": "sound.creaturefeature.sinister.hurt",
     "sounds": [
-      "creaturefeature:smiles"
+      "creaturefeature:entity/sinister_hurt"
     ]
   },
-  "entity.sinister_hurt": {
-    "subtitle": "sound.creaturefeature.sinister_hurt",
+  "entity.sinister.death": {
+    "subtitle": "sound.creaturefeature.sinister.death",
     "sounds": [
-      "creaturefeature:sinister_hurt"
+      "creaturefeature:entity/sinister_die"
     ]
   },
-  "entity.sinister_die": {
-    "subtitle": "sound.creaturefeature.sinister_death",
+  "entity.fiend.hurt": {
+    "subtitle": "sound.creaturefeature.fiend.hurt",
     "sounds": [
-      "creaturefeature:sinister_die"
+      "creaturefeature:entity/fiend_hurt"
     ]
   },
-  "entity.fiend_hurt": {
-    "subtitle": "sound.creaturefeature.fiend_hurt",
+  "entity.fiend.death": {
+    "subtitle": "sound.creaturefeature.fiend.death",
     "sounds": [
-      "creaturefeature:fiend_hurt08"
+      "creaturefeature:entity/fiend_death"
     ]
   },
-  "entity.fiend_die": {
-    "subtitle": "sound.creaturefeature.fiend_death",
-    "sounds": [
-      "creaturefeature:fiend_death"
-    ]
-  },
-  "entity.coa_hurt": {
-    "subtitle": "sound.creaturefeature.coa_hurt",
-    "sounds": [
-      "creaturefeature:coa_tear"
-    ]
-  },
-  "entity.stained_glass_die": {
+  "entity.stained_glass.death": {
     "subtitle": "sound.creaturefeature.stained_glass_die",
     "sounds": [
-      "creaturefeature:stained_glass_die"
+      "creaturefeature:entity/stained_glass_die"
     ]
   },
-  "entity.shot": {
-    "subtitle": "sound.creaturefeature.shot",
+  "entity.coat_of_arms.hurt": {
+    "subtitle": "sound.creaturefeature.coat_of_arms.hurt",
     "sounds": [
-      "creaturefeature:shot"
+      "creaturefeature:entity/coat_of_arms_tear"
     ]
   },
-  "entity.friend_hurt": {
+  "entity.shot.fired": {
+    "subtitle": "sound.creaturefeature.shot.fired",
+    "sounds": [
+      "creaturefeature:entity/shot"
+    ]
+  },
+  "entity.friend.ambient": {
     "subtitle": "sound.creaturefeature.laughter",
     "sounds": [
-      "creaturefeature:smiles_hurt"
+      "creaturefeature:entity/smiles"
+    ]
+  },
+  "entity.friend.hurt": {
+    "subtitle": "sound.creaturefeature.laughter",
+    "sounds": [
+      "creaturefeature:entity/smiles_hurt"
     ]
   }
 }
