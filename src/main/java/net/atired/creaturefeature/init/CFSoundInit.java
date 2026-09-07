@@ -61,7 +61,7 @@ public class CFSoundInit {
             SoundEvent::createVariableRangeEvent
     );
     public static final Holder<SoundEvent> MACH_DIE = SOUND_EVENTS.register(
-            "entity.machination.die",
+            "entity.machination.death",
             // Takes in the registry name
             SoundEvent::createVariableRangeEvent
     );
@@ -87,6 +87,26 @@ public class CFSoundInit {
     );
     public static final Holder<SoundEvent> SG_DIE = SOUND_EVENTS.register(
             "entity.stained_glass.death",
+            // Takes in the registry name
+            SoundEvent::createVariableRangeEvent
+    );
+    public static final Holder<SoundEvent> SOLIS_AMBIENT = SOUND_EVENTS.register(
+            "entity.saint_solis.ambient",
+            // Takes in the registry name
+            SoundEvent::createVariableRangeEvent
+    );
+    public static final Holder<SoundEvent> SOLIS_ROAR = SOUND_EVENTS.register(
+            "entity.saint_solis.roar",
+            // Takes in the registry name
+            SoundEvent::createVariableRangeEvent
+    );
+    public static final Holder<SoundEvent> SOLIS_HURT = SOUND_EVENTS.register(
+            "entity.saint_solis.hurt",
+            // Takes in the registry name
+            SoundEvent::createVariableRangeEvent
+    );
+    public static final Holder<SoundEvent> SOLIS_DIE = SOUND_EVENTS.register(
+            "entity.saint_solis.death",
             // Takes in the registry name
             SoundEvent::createVariableRangeEvent
     );

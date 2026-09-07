@@ -1,12 +1,13 @@
 package net.atired.creaturefeature.entity;
 
 import net.atired.creaturefeature.init.CFItemInit;
+import net.atired.creaturefeature.init.CFSoundInit;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundEvent;
 import net.minecraft.util.Mth;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.Entity;
@@ -43,8 +44,7 @@ public class SaintSolisEntity extends Monster {
                     }
                     setOpening(Mth.lerp(0.3f,getOpening(),1.0f));
                     if(this.fireDelay<=5&&this.fireDelay>1){
-                        playSound(SoundEvents.POLAR_BEAR_WARNING,1.0f,0.6f);
-                        playSound(SoundEvents.CAMPFIRE_CRACKLE,0.4f,1.5f);
+                        playSound(CFSoundInit.SOLIS_ROAR.value(),1.0f,0.9f+(float)Math.random()/6f);
                         StarProjEntity star = new StarProjEntity(level(), this);
                         star.shoot(getDir().x, getDir().y,getDir().z, 0.8F, 40f);
                         star.setPos(getEyePosition());
@@ -78,6 +78,21 @@ public class SaintSolisEntity extends Monster {
         this.targetSelector.addGoal(2, new NearestAttackableTargetGoal(this, Player.class, true));
 
         super.registerGoals();
+    }
+    
+    @Override
+    protected SoundEvent getAmbientSound() {
+        return CFSoundInit.SOLIS_AMBIENT.value();
+    }
+    
+    @Override
+    protected SoundEvent getHurtSound(DamageSource damageSource) {
+        return CFSoundInit.SOLIS_HURT.value();
+    }
+
+    @Override
+    protected SoundEvent getDeathSound() {
+        return CFSoundInit.SOLIS_DIE.value();
     }
 
     @Override

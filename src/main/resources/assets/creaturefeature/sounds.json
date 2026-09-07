@@ -20,36 +20,36 @@
   "entity.sinister.death": {
     "subtitle": "sound.creaturefeature.sinister.death",
     "sounds": [
-      "creaturefeature:entity/sinister_die"
+      "creaturefeature:entity/sinister_death"
     ]
   },
   "entity.machination.ambient": {
     "subtitle": "sound.creaturefeature.machination.ambient",
     "sounds": [
-      "creaturefeature:machination_ambient1",
-      "creaturefeature:machination_ambient2",
-      "creaturefeature:machination_ambient3"
+      "creaturefeature:entity/machination_ambient1",
+      "creaturefeature:entity/machination_ambient2",
+      "creaturefeature:entity/machination_ambient3"
     ]
   },
   "entity.machination.kick": {
     "subtitle": "sound.creaturefeature.machination.kick",
     "sounds": [
-      "creaturefeature:machination_kick1",
-      "creaturefeature:machination_kick2"
+      "creaturefeature:entity/machination_kick1",
+      "creaturefeature:entity/machination_kick2"
     ]
   },
   "entity.machination.hurt": {
     "subtitle": "sound.creaturefeature.machination.hurt",
     "sounds": [
-      "creaturefeature:machination_hurt1",
-      "creaturefeature:machination_hurt2",
-      "creaturefeature:machination_hurt3"
+      "creaturefeature:entity/machination_hurt1",
+      "creaturefeature:entity/machination_hurt2",
+      "creaturefeature:entity/machination_hurt3"
     ]
   },
   "entity.machination.death": {
-    "subtitle": "sound.creaturefeature.machination.die",
+    "subtitle": "sound.creaturefeature.machination.death",
     "sounds": [
-      "creaturefeature:machination_death"
+      "creaturefeature:entity/machination_death"
     ]
   },
   "entity.fiend.hurt": {
@@ -95,6 +95,36 @@
     "subtitle": "sound.creaturefeature.stained_glass.death",
     "sounds": [
       "creaturefeature:entity/stained_glass_death"
+    ]
+  },
+  "entity.saint_solis.ambient": {
+    "subtitle": "sound.creaturefeature.saint_solis.ambient",
+    "sounds": [
+      "creaturefeature:entity/saint_solis_ambient1",
+      "creaturefeature:entity/saint_solis_ambient2",
+      "creaturefeature:entity/saint_solis_ambient3"
+    ]
+  },
+  "entity.saint_solis.roar": {
+    "subtitle": "sound.creaturefeature.saint_solis.roar",
+    "sounds": [
+      "creaturefeature:entity/saint_solis_roar1",
+      "creaturefeature:entity/saint_solis_roar2",
+      "creaturefeature:entity/saint_solis_roar3"
+    ]
+  },
+  "entity.saint_solis.hurt": {
+    "subtitle": "sound.creaturefeature.saint_solis.hurt",
+    "sounds": [
+      "creaturefeature:entity/saint_solis_hurt1",
+      "creaturefeature:entity/saint_solis_hurt2",
+      "creaturefeature:entity/saint_solis_hurt3"
+    ]
+  },
+  "entity.saint_solis.death": {
+    "subtitle": "sound.creaturefeature.saint_solis.death",
+    "sounds": [
+      "creaturefeature:entity/saint_solis_death"
     ]
   },
   "entity.coat_of_arms.hurt": {
